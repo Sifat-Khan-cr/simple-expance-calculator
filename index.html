@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sifat money</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-center m-10 text-5xl font-semibold">Sifat Expanse Calculate</h1>
+    <section>
+        <div class="flex justify-around bg-white p-10 box-border">
+            <div class="bg-red-400 w-2/5 text-center" style="background-image: url(./images/dollar.jpg);">
+            </div>
+            <div class="bg-gray-50 w-2/6 p-10">
+                <h1 class="text-center font-medium text-xl my-5">Income</h1>
+                <div class="flex justify-center my-3">
+                    <h2 class="inline mx-2 font-medium text-xl">Income :</h2>
+                    <input id="income" class="bg-gray-200" type="text">
+                </div>
+                <h1 class="text-center font-medium text-xl my-5">Expenses</h1>
+                <div class="flex justify-center my-3">
+                    <h2 class="inline mx-2 font-medium text-xl">Food :</h2>
+                    <input id="food" class="bg-gray-200" type="text">
+                </div>
+                <div class="flex justify-center my-5">
+                    <h2 class="inline mx-2 font-medium text-xl">Rent :</h2>
+                    <input id="rent" class="bg-gray-200" type="text">
+                </div>
+                <div class="flex justify-center m-3">
+                    <h2 class="inline mx-2 font-medium text-xl">Cloth :</h2>
+                    <input id="cloth" class="bg-gray-200" type="text">
+                </div>
+                <button id="calculate"
+                    class="bg-blue-400 py-2 px-5 my-5 text-xl font-bold text-white rounded-lg mx-auto block">Calculate</button>
+                <h1 class="text-center font-medium text-xl my-5">Total Expenses : <span id="total">00</span></h1>
+                <h1 class="text-center font-medium text-xl my-5">Balance : <span id="balance">00</span></h1>
+                <div class="flex justify-center m-3 align-middle">
+                    <h2 class="inline-block mx-2 font-medium text-xl">Save :</h2>
+                    <input id="save" class="bg-gray-200 inline-block" type="text">
+                    <h2 class="inline-block mx-2 font-medium text-xl">%</h2>
+                    <button id="save-btn"
+                        class="bg-blue-400 inline-block py-2 px-5 text-xl font-bold text-white rounded-lg  block">Save</button>
+                </div>
+                <h1 class="text-center font-medium text-xl my-5">Saving Account : <span id="save-balance">00</span>
+                </h1>
+                <h1 class="text-center font-medium text-xl my-5">Remaining Balance : <span
+                        id="remaining-balance">00</span></h1>
+
+
+            </div>
+        </div>
+
+    </section>
+    <script src="./expanse.js"></script>
+
+</body>
+
+</html>
